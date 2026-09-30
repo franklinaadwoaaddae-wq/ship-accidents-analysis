@@ -1,14 +1,16 @@
-# Ship Accidents Analysis
-
-## Purpose
-
-This repository contains my analysis of ship accident count data for SRM 611. The analysis examines the relationship between exposure and the number of accidents while accounting for construction era. I use model diagnostics to evaluate an initial linear regression model and investigate modifications when the initial model does not adequately fit the data.
-
 ## Data
 
-The ship accident dataset was provided by the course professor for SRM 611. The dataset contains information on accident counts, exposure, construction era, operational status, and service months.
+The Ship Accidents dataset was provided by the course professor for SRM 611. The data file is not included in this public repository. To reproduce the analysis, place `ShipAccidents.csv` in a folder named `data` within the repository.
 
 ## Repository Contents
 
-- `analysis/ship_accidents_analysis.R` contains the R code used for the exploratory analysis, model fitting, diagnostics, and model comparisons.
-- `data/` contains the data used in the analysis.
+- `analysis/ship_accidents_analysis.R` contains the R code for data exploration, model fitting, diagnostic checks, model modification, and model comparison.
+- `README.md` provides an overview of the analysis and instructions for reproducing it.
+
+## Reproducing the Analysis
+
+1. Obtain `ShipAccidents.csv` from the SRM 611 course materials.
+2. Create a folder named `data` in the repository.
+3. Place `ShipAccidents.csv` inside the `data` folder.
+4. Run `analysis/ship_accidents_analysis.R` from the repository's root directory.
+5. The analysis requires the `lmtest` R package.
